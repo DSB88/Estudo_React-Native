@@ -1,26 +1,21 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
+import splitLayoutProps from 'react-native/Libraries/StyleSheet/splitLayoutProps'
 
-import Aleatorio from './components/Aleatorio'
- import MinMax from './components/MinAndMax'
+// import Aleatorio from './components/Aleatorio'
+//  import MinMax from './components/MinAndMax'
 // import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 // import Primeiro from './components/Primeiro'
+// import Titulo from './components/Titulo'
+import Botao from './components/Botao'
 
 
 export default () => (
     <View style={style.App}>
-        <Aleatorio min={1} max={500} />      
-        <Aleatorio min={1} max={500} />      
-        <Aleatorio min={1} max={500} />      
-        <Aleatorio min={1} max={500} />      
-        <Aleatorio min={1} max={500} />      
-        <Aleatorio min={1} max={500} />      
-        {/* <MinMax min={1} max={2} />
-        <MinMax min={1} max={2} /> */}
-        {/* <CompPadrao />
-        <Comp1 />
-        <Comp2 />
-        <Primeiro /> */}
+
+        <Botao />
+
+
     </View>
 )
 
