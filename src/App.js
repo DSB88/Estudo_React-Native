@@ -8,12 +8,14 @@ import splitLayoutProps from 'react-native/Libraries/StyleSheet/splitLayoutProps
 // import Primeiro from './components/Primeiro'
 // import Titulo from './components/Titulo'
 import Botao from './components/Botao'
+import Contador from './components/Contador'
 
 
 export default () => (
     <View style={style.App}>
 
-        <Botao />
+        <Contador inicial={100} passo={13} />
+        <Contador />
 
 
     </View>
