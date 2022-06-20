@@ -1,16 +1,24 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import ContadorV2 from './components/contador/ContadorV2'
-import Diferenciar from './components/Diferenciar'
+import { SafeAreaView, StyleSheet } from 'react-native'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 export default () => (
-    <View style={style.App}>
+    <SafeAreaView style={style.App}>
 
-      <Diferenciar />
- 
+        <Familia>
+            <Membro nome="Diego" sobrenome="Brandao" />
+            <Membro nome="Isabelle" sobrenome="Brandao" />
+        </Familia>
 
+        <Familia>
+            <Membro nome="Joshua" sobrenome="Brandao" />
+            <Membro nome="Julia" sobrenome="Silva" />
+            <Membro nome="Gui" sobrenome="Silva" />
+            <Membro nome="Rebeca" sobrenome="Silva" />
+        </Familia>
 
-    </View>
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
