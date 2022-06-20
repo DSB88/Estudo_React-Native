@@ -1,13 +1,22 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import Estilo from './estilo'
+import { View, Text, Button } from 'react-native'
+
 
 export default props => {
-    return (
-        <>
-            <Text style={Estilo.txtG}> {props.a} </Text>
-            <Text style={Estilo.txtG}> {props.b} </Text>
-        </>
 
+    function gerarNumero(min, max) {
+        const fator = max - min 
+        return parseInt(Math.random() * fator)
+
+    }
+    return (
+        <Button
+            title='Executar'
+            onPress={function () {
+               const n = gerarNumero(props.min, props.max)
+                props.funcao(n, "O valor é: ")
+            }}
+        />
     )
+
 }

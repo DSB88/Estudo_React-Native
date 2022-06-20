@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text } from 'react-native'
-import Estilo from './estilo'
 import Filho from './Filho'
+import estilo from '../estilo'
 
 export default props => {
-    let x = 13
-    let y = 100
+
+    const [texto, setTexto] = useState('')
+    const [num, setNum] = useState(0)
+
+
+    function exibirValor(numero,texto) {
+        setNum(numero)
+        setTexto(texto)
+    }
+
     return (
         <>
-            <Filho a={x} b={y} />
-            <Filho a={x + 100} b={y + 200} />
+            <Text style={estilo.txtG}>{texto}{num}</Text>
+            <Filho
+                min={10}
+                max={60}
+                funcao={exibirValor}
+            />
         </>
     )
 }

@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import Botao from './components/Botao'
-import Pai from './components/direta/Pai'
+import ContadorV2 from './components/contador/ContadorV2'
+import Diferenciar from './components/Diferenciar'
 
 export default () => (
     <View style={style.App}>
 
-    <Pai>       </Pai>
+      <Diferenciar />
+ 
+
 
     </View>
 )
