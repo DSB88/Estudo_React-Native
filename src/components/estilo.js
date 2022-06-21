@@ -6,7 +6,11 @@ export default StyleSheet.create({
         textAlign: "center",
     },
     txtM: {
-        fontSize: 25,
+        fontSize: 28,
+        textAlign: "center",
+    },
+    txtP: {
+        fontSize: 20,
         textAlign: "center",
     }
 })

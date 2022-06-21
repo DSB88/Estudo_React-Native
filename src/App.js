@@ -1,22 +1,13 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
+import Quadrado from './components/layout/Quadrado' 
 
 export default () => (
     <SafeAreaView style={style.App}>
-
-        <Familia>
-            <Membro nome="Diego" sobrenome="Brandao" />
-            <Membro nome="Isabelle" sobrenome="Brandao" />
-        </Familia>
-
-        <Familia>
-            <Membro nome="Joshua" sobrenome="Brandao" />
-            <Membro nome="Julia" sobrenome="Silva" />
-            <Membro nome="Gui" sobrenome="Silva" />
-            <Membro nome="Rebeca" sobrenome="Silva" />
-        </Familia>
+ 
+        <Quadrado white />
+        <Quadrado cor = 'purple' />
+        <Quadrado cor = 'green' />
 
     </SafeAreaView>
 )
