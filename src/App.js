@@ -1,23 +1,19 @@
-import React from 'react'
-import { SafeAreaView, StyleSheet } from 'react-native'
-import Quadrado from './components/layout/Quadrado' 
+import React from 'react';
+import {SafeAreaView, StyleSheet} from 'react-native';
+
+import Mega from './components/mega/Mega';
 
 export default () => (
-    <SafeAreaView style={style.App}>
- 
-        <Quadrado white />
-        <Quadrado cor = 'purple' />
-        <Quadrado cor = 'green' />
-
-    </SafeAreaView>
-)
+  <SafeAreaView style={style.App}>
+    <Mega qtdeNumeros={12} />
+  </SafeAreaView>
+);
 
 const style = StyleSheet.create({
-    App: {
-        flexGrow: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 20
-    },
-
-})
+  App: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+});
