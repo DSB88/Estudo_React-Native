@@ -1,3 +1,5 @@
-function f(){
-    return { };
+function f() {
+  return {};
 }
+
+f();
