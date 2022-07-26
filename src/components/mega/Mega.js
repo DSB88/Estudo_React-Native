@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {View, Text, TextInput, Button} from 'react-native';
-import Estilo from '../estilo';
+import React, { Component } from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import Estilo from "../estilo";
 
-import MegaNumero from './MegaNumero';
+import MegaNumero from "./MegaNumero";
 
 export default class Mega extends Component {
   state = {
@@ -10,11 +10,11 @@ export default class Mega extends Component {
     numeros: [],
   };
 
-  alterarQtdeNumero = qtde => {
-    this.setState({qtdeNumeros: +qtde});
+  alterarQtdeNumero = (qtde) => {
+    this.setState({ qtdeNumeros: +qtde });
   };
 
-  gerarNumeroNaoContido = nums => {
+  gerarNumeroNaoContido = (nums) => {
     const novo = parseInt(Math.random() * 60) + 1;
     return nums.includes(novo) ? this.gerarNumeroNaoContido(nums) : novo;
   };
@@ -22,14 +22,14 @@ export default class Mega extends Component {
   gerarNumeros = () => {
     const numeros = Array(this.state.qtdeNumeros)
       .fill()
-      .reduce(n => [...n, this.gerarNumeroNaoContido(n)], [])
+      .reduce((n) => [...n, this.gerarNumeroNaoContido(n)], [])
       .sort((a, b) => a - b);
-    this.setState({numeros});
+    this.setState({ numeros });
   };
 
   exibirNumeros = () => {
     const nums = this.state.numeros;
-    return nums.map(num => {
+    return nums.map((num) => {
       return <MegaNumero key={num} num={num} />;
     });
   };
@@ -39,8 +39,8 @@ export default class Mega extends Component {
       <>
         <Text style={Estilo.txtG}>Gerador de Mega-Sena</Text>
         <TextInput
-          keyboardType={'numeric'}
-          style={{borderBottomWidth: 1}}
+          keyboardType={"numeric"}
+          style={{ borderBottomWidth: 1 }}
           placeholder="Qtde de Números"
           value={`${this.state.qtdeNumeros}`}
           onChangeText={this.alterarQtdeNumero}
@@ -49,10 +49,11 @@ export default class Mega extends Component {
         <View
           style={{
             marginTop: 20,
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-          }}>
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           {this.exibirNumeros()}
         </View>
       </>
