@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { View, Text, TextInput, Button } from "react-native";
-import Estilo from "../estilo";
+import React, { Component } from "react"
+import { View, Text, TextInput, Button } from "react-native"
+import Estilo from "../estilo"
 
 import MegaNumero from "./MegaNumero";
 
