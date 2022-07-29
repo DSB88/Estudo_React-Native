@@ -1,16 +1,14 @@
-import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
-import Estilo from '../estilo'
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+import Estilo from '../estilo';
 
-export default ({num}) => {
+export default ({ num }) => {
     return (
         <View style={style.Container}>
-            <Text style={[Estilo.txtG, style.Num]}>
-                {num}
-            </Text>
+            <Text style={[Estilo.txtG, style.Num]}>{num}</Text>
         </View>
-    )
-}
+    );
+};
 
 const style = StyleSheet.create({
     Container: {
@@ -21,6 +19,6 @@ const style = StyleSheet.create({
         borderRadius: 25,
     },
     Num: {
-        color: '#FFF'
-    }
-})
+        color: '#FFF',
+    },
+});

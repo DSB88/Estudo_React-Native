@@ -1,6 +1,6 @@
-import React from 'react'
-import { Text } from 'react-native'
-import estilo from '../estilo'
+import React from 'react';
+import { Text } from 'react-native';
+import estilo from '../estilo';
 
 export default props => {
     return (
@@ -9,5 +9,5 @@ export default props => {
             {props.children}
             <Text style={estilo.txtM}>[Fim] Membros da Família</Text>
         </>
-    )
-}
+    );
+};

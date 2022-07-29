@@ -1,11 +1,7 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import Estilo from './estilo'
+import React from 'react';
+import { View, Text } from 'react-native';
+import Estilo from './estilo';
 
 export default props => {
-    return (
-        <Text style={Estilo.txtG}>
-           
-        </Text>
-    )
-}
+    return <Text style={Estilo.txtG}></Text>;
+};

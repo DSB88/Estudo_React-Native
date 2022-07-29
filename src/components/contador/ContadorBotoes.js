@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, Button, StyleSheet } from 'react-native'
+import React from 'react';
+import { View, Button, StyleSheet } from 'react-native';
 
 export default props => {
     return (
@@ -7,11 +7,11 @@ export default props => {
             <Button title="+" onPress={props.inc} />
             <Button title="-" onPress={props.dec} />
         </View>
-    )
-}
+    );
+};
 
 const style = StyleSheet.create({
     Botoes: {
-        flexDirection: "row"
-    }
-})
+        flexDirection: 'row',
+    },
+});

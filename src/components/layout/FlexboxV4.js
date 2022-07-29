@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 
 export default props => {
     return (
@@ -8,14 +8,14 @@ export default props => {
             <View style={style.V1}></View>
             <View style={style.V2}></View>
         </View>
-    )
-}
+    );
+};
 
 const style = StyleSheet.create({
     FlexV4: {
         flexGrow: 1,
         width: 100,
-        backgroundColor: '#000'
+        backgroundColor: '#000',
     },
     V0: {
         backgroundColor: '#36c9a7',
@@ -28,5 +28,5 @@ const style = StyleSheet.create({
     V2: {
         backgroundColor: '#dd22c1',
         flexGrow: 1,
-    }
-})
+    },
+});

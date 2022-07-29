@@ -1,10 +1,10 @@
-import React from 'react'
-import { Text } from 'react-native'
-import Estilo from './estilo'
-import If from './If'
+import React from 'react';
+import { Text } from 'react-native';
+import Estilo from './estilo';
+import If from './If';
 
 export default props => {
-    const usuario = props.usuario || {}
+    const usuario = props.usuario || {};
     return (
         <>
             <If teste={usuario && usuario.nome && usuario.email}>
@@ -14,5 +14,5 @@ export default props => {
                 </Text>
             </If>
         </>
-    )
-}
+    );
+};
