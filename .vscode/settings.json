@@ -1,4 +1,10 @@
 {
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "files.eol": "\n",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
